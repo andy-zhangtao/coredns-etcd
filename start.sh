@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 /coredns-etcd
-if[ $? -ne 0];
-nohup /coredns  $* >> /dns.log & tail -f /dns.log then
+if [ $? -ne 0 ]; then
 exit 1
 fi
+/coredns  $*
